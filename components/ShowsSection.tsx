@@ -67,7 +67,7 @@ export default function ShowsSection() {
       y: -28,
       duration: 0.38,
       ease: "power2.in",
-      onComplete: () => gsap.set(oldPanel, { pointerEvents: "none" }),
+      onComplete: () => { gsap.set(oldPanel, { pointerEvents: "none" }); },
     });
 
     // Incoming panel
