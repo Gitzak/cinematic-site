@@ -24,7 +24,7 @@ export default function Navbar() {
   const mobileMenuRef = useRef<HTMLDivElement>(null);
   const overlayRef = useRef<HTMLDivElement>(null);
   const menuLineRefs = useRef<(HTMLSpanElement | null)[]>([]);
-  const mobileLinksRef = useRef<(HTMLLIElement | null)[]>([]);
+  const mobileLinksRef = useRef<(HTMLLIElement | HTMLDivElement | null)[]>([]);
 
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
